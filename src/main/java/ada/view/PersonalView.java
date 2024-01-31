@@ -29,24 +29,28 @@ public class PersonalView {
 
     public PersonalTask<String> createTask() {
         System.out.println("Criar Tarefa:");
-        System.out.println("Título da tarefa: ");
+
+        System.out.print("Título da tarefa: ");
+        scanner.nextLine();
         String title = scanner.nextLine();
 
-        System.out.println("Descrição da tarefa: ");
+        System.out.print("Descrição da tarefa: ");
         String description = scanner.nextLine();
 
-        System.out.println("Prazo final da tarefa: ");
+        System.out.print("Prazo final da tarefa: ");
         String deadline = scanner.nextLine();
 
-        System.out.println("Tipo da tarefa: ");
+        System.out.print("Tipo da tarefa: ");
         String type = scanner.nextLine();
 
         return new PersonalTask<>(title, description, deadline, type);
     }
 
+
     public void editTask(PersonalTask<String> task) {
         System.out.println("Editar Tarefa (ID: " + task.getId() + "):");
         System.out.println("Novo título da tarefa: ");
+        scanner.nextLine();
         task.setTitle(scanner.nextLine());
 
         System.out.println("Nova descrição da tarefa: ");

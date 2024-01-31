@@ -15,6 +15,7 @@ public class WorkView {
     public WorkTask<String> createTask() {
         System.out.println("Criar Tarefa de Trabalho:");
         System.out.println("Título da tarefa: ");
+        scanner.nextLine();
         String title = scanner.nextLine();
 
         System.out.println("Descrição da tarefa: ");
@@ -35,6 +36,7 @@ public class WorkView {
     public void editTask(WorkTask<String> task) {
         System.out.println("Editar Tarefa de Trabalho (ID: " + task.getId() + "):");
         System.out.println("Novo título da tarefa: ");
+        scanner.nextLine();
         task.setTitle(scanner.nextLine());
 
         System.out.println("Nova descrição da tarefa: ");

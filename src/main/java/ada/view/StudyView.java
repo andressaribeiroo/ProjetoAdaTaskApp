@@ -14,7 +14,9 @@ public class StudyView {
 
     public StudyTask<String> createTask() {
         System.out.println("Criar Tarefa de Estudo:");
+
         System.out.print("Título da tarefa: ");
+        scanner.nextLine();
         String title = scanner.nextLine();
 
         System.out.print("Descrição da tarefa: ");
@@ -32,6 +34,7 @@ public class StudyView {
     public void editTask(StudyTask<String> task) {
         System.out.println("Editar Tarefa de Estudo (ID: " + task.getId() + "):");
         System.out.print("Novo título da tarefa: ");
+        scanner.nextLine();
         task.setTitle(scanner.nextLine());
 
         System.out.print("Nova descrição da tarefa: ");

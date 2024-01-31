@@ -51,6 +51,7 @@ public class PersonalController {
         PersonalTask task = personalView.createTask();
         taskService.addTask(task);
         personalView.displayMessage("Tarefa criada com sucesso!");
+
     }
 
     private void editTask() {
