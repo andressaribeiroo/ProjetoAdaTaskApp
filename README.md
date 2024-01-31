@@ -14,7 +14,7 @@ A **AdaTaskApp** oferece diversas funcionalidades para simplificar o gerenciamen
 
 4. **Visualização de Tarefas**: Tenha uma visão geral de todas as suas tarefas em uma lista organizada. Isso facilita o acompanhamento do progresso e o planejamento de futuras ações.
 
-## Como Usar
+## Como Executar
 
 Basta seguir os seguintes passos:
 
@@ -42,3 +42,51 @@ Basta seguir os seguintes passos:
 
     ```shell
     java Main
+
+## Arquitetura do ProjetoAdaTaskApp
+
+## Visão Geral
+Este documento descreve a arquitetura do ProjetoAdaTaskApp, uma aplicação Java para gerenciamento de tarefas.
+
+## Componentes
+
+### Controladores
+- `PersonalController`: Gerencia as tarefas pessoais.
+- `StudyController`: Gerencia as tarefas de estudo.
+- `WorkController`: Gerencia as tarefas de trabalho.
+
+Cada controlador processa as entradas do usuário e interage com a camada de serviço correspondente.
+
+### Domínio
+- `BaseTask`: Classe base para tarefas.
+- `PersonalTask`: Representa uma tarefa pessoal.
+- `StudyTask`: Representa uma tarefa de estudo.
+- `WorkTask`: Representa uma tarefa de trabalho.
+
+As classes de domínio definem a estrutura dos dados que serão gerenciados pela aplicação.
+
+### Repositório
+- `TaskRepository`: Interface para a persistência de tarefas, interage diretamente com o banco de dados.
+
+### Serviços
+- `TaskService`: Camada de serviço que contém a lógica de negócio, interagindo com o repositório de tarefas.
+
+### Visões
+- `PersonalView`: Interface de usuário para tarefas pessoais.
+- `StudyView`: Interface de usuário para tarefas de estudo.
+- `WorkView`: Interface de usuário para tarefas de trabalho.
+
+As visões são responsáveis por apresentar os dados ao usuário e capturar suas interações.
+
+### Main
+- `Main`: Ponto de entrada da aplicação que configura e inicia a aplicação.
+
+## Fluxo da Aplicação
+1. `Main` inicializa o sistema e direciona para o controlador apropriado com base na entrada do usuário.
+2. O controlador interage com a camada de `TaskService`.
+3. `TaskService` utiliza `TaskRepository` para persistir ou recuperar dados.
+4. Os dados são devolvidos ao controlador, que então atualiza a `view` correspondente.
+
+## Conclusão
+Esta arquitetura permite uma separação clara e um gerenciamento eficiente das responsabilidades dentro da aplicação, facilitando a manutenção e a expansão futuras.
+
