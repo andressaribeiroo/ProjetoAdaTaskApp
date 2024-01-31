@@ -13,7 +13,7 @@ public class PersonalView {
     }
 
     public void displayMenu() {
-        System.out.printf("Escolha uma opção:%n" +
+        System.out.printf("Escolha uma opcao:%n" +
                 "------------------------%n" +
                 "1. Criar tarefa%n" +
                 "2. Editar tarefa%n" +
@@ -25,18 +25,18 @@ public class PersonalView {
 
 
     public int getUserChoice() {
-        System.out.print("\nDigite o número da opção desejada:\n ");
+        System.out.print("\nDigite o numero da opcao desejada:\n ");
         return scanner.nextInt();
     }
 
     public PersonalTask<String> createTask() {
         System.out.println("Criar Tarefa:");
 
-        System.out.print("Título da tarefa: ");
+        System.out.print("Titulo da tarefa: ");
         scanner.nextLine();
         String title = scanner.nextLine();
 
-        System.out.print("Descrição da tarefa: ");
+        System.out.print("Descricao da tarefa: ");
         String description = scanner.nextLine();
 
         System.out.print("Prazo final da tarefa: ");
@@ -55,7 +55,7 @@ public class PersonalView {
         scanner.nextLine();
         task.setTitle(scanner.nextLine());
 
-        System.out.println("Nova descrição da tarefa: ");
+        System.out.println("Nova descricao da tarefa: ");
         task.setDescription(scanner.nextLine());
 
         System.out.print("Nova data final da tarefa: ");

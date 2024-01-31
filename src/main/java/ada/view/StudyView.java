@@ -38,13 +38,13 @@ public class StudyView {
         scanner.nextLine();
         task.setTitle(scanner.nextLine());
 
-        System.out.print("Nova descrição da tarefa: ");
+        System.out.print("Nova descricao da tarefa: ");
         task.setDescription(scanner.nextLine());
 
         System.out.print("Nova data final da tarefa: ");
         task.setDeadline(scanner.nextLine());
 
-        System.out.print("Novo curso relacionado à tarefa: ");
+        System.out.print("Novo curso relacionado a tarefa: ");
         task.setCourse(scanner.nextLine());
     }
 
@@ -62,7 +62,7 @@ public class StudyView {
     }
 
     public void displayMenu() {
-        System.out.printf("Escolha uma opção:%n" +
+        System.out.printf("Escolha uma opcao:%n" +
                 "------------------------%n" +
                 "1. Criar tarefa%n" +
                 "2. Editar tarefa%n" +
@@ -73,7 +73,7 @@ public class StudyView {
     }
 
     public int getUserChoice() {
-        System.out.print("\nDigite o número da opção desejada:\n");
+        System.out.print("\nDigite o numero da opcao desejada:\n");
         return scanner.nextInt();
     }
 

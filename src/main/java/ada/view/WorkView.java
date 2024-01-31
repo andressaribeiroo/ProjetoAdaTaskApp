@@ -39,7 +39,7 @@ public class WorkView {
         scanner.nextLine();
         task.setTitle(scanner.nextLine());
 
-        System.out.println("Nova descrição da tarefa: ");
+        System.out.println("Nova descricao da tarefa: ");
         task.setDescription(scanner.nextLine());
 
         System.out.print("Nova data final da tarefa: ");
@@ -48,7 +48,7 @@ public class WorkView {
         System.out.print("Novo tipo de tarefa: ");
         task.setTaskType(scanner.nextLine());
 
-        System.out.print("Novo membro da equipe responsável: ");
+        System.out.print("Novo membro da equipe responsavel: ");
         task.setTeamMember(scanner.nextLine());
     }
 
@@ -66,7 +66,7 @@ public class WorkView {
     }
 
     public void displayMenu() {
-        System.out.printf("Escolha uma opção:%n" +
+        System.out.printf("Escolha uma opcao:%n" +
                 "------------------------%n" +
                 "1. Criar tarefa%n" +
                 "2. Editar tarefa%n" +
@@ -77,7 +77,7 @@ public class WorkView {
     }
 
     public int getUserChoice() {
-        System.out.print("\nDigite o número da opção desejada:\n ");
+        System.out.print("\nDigite o numero da opcao desejada:\n ");
         return scanner.nextInt();
     }
 
