@@ -13,17 +13,19 @@ public class PersonalView {
     }
 
     public void displayMenu() {
-        System.out.println("Escolha uma opção:");
-        System.out.println("1. Criar tarefa");
-        System.out.println("2. Editar tarefa");
-        System.out.println("3. Excluir tarefa");
-        System.out.println("4. Listar tarefas");
-        System.out.println("5. Voltar para o menu principal");
-        System.out.println("6. Encerrar programa");
+        System.out.printf("Escolha uma opção:%n" +
+                "------------------------%n" +
+                "1. Criar tarefa%n" +
+                "2. Editar tarefa%n" +
+                "3. Excluir tarefa%n" +
+                "4. Listar tarefas%n" +
+                "5. Voltar para o menu principal%n" +
+                "6. Encerrar programa%n");
     }
 
+
     public int getUserChoice() {
-        System.out.print("Digite o número da opção desejada: ");
+        System.out.print("\nDigite o número da opção desejada:\n ");
         return scanner.nextInt();
     }
 

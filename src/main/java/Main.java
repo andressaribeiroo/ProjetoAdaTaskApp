@@ -22,7 +22,8 @@ public class Main {
                     "%n1. Tarefas Pessoais; " +
                     "%n2. Tarefas de Estudo; " +
                     "%n3. Tarefas de Trabalho;" +
-                    "%nInsira o número correspondente à opção escolhida:%n");
+                    "%n----------------------------------------------------" +
+                    "%nInsira o numero correspondente a opcao escolhida:");
 
             int choice = scanner.nextInt();
 
