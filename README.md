@@ -31,7 +31,7 @@ Basta seguir os seguintes passos:
 3. **compile o projeto** (você deve ter o Java instalado em seu sistema):
     
     ```shell
-    javac Main.
+    javac Main.java
 
 4. **Atenção**: Para recompilar o código em caso de erro:
 
